@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\0PROGRAM\\UnityAssets\\GameJam\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|d:\\0program\\unityassets\\gamejam\\assets\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|d:\\0program\\unityassets\\gamejam\\assets\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{35223D1A-0ABA-3E00-D682-2F913F0EB5DC}|Assembly-CSharp.csproj|solutionrelative:assets\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Brick.cs",
+              "DocumentMoniker": "D:\\0PROGRAM\\UnityAssets\\GameJam\\Assets\\Brick.cs",
+              "RelativeDocumentMoniker": "Assets\\Brick.cs",
+              "ToolTip": "D:\\0PROGRAM\\UnityAssets\\GameJam\\Assets\\Brick.cs",
+              "RelativeToolTip": "Assets\\Brick.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAADwvwYAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T02:23:36.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BrickSpawner.cs",
+              "DocumentMoniker": "D:\\0PROGRAM\\UnityAssets\\GameJam\\Assets\\BrickSpawner.cs",
+              "RelativeDocumentMoniker": "Assets\\BrickSpawner.cs",
+              "ToolTip": "D:\\0PROGRAM\\UnityAssets\\GameJam\\Assets\\BrickSpawner.cs",
+              "RelativeToolTip": "Assets\\BrickSpawner.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-09T01:34:18.658Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
