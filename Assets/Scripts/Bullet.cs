@@ -41,6 +41,7 @@ public class Bullet : MonoBehaviour {
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
+        //Debug.Log(isSecondaryBullet);
         if (collision.gameObject.tag == "Ball") {
             if (ignoreFirstCollision) {
                 ignoreFirstCollision = false;
@@ -65,7 +66,7 @@ public class Bullet : MonoBehaviour {
         this.direction = direction;
     }
 
-    public void SetIgnoreFirstCollision() {
-        ignoreFirstCollision = true;
+    public void SetIgnoreFirstCollision(bool flag) {
+        ignoreFirstCollision = flag;
     }
 }

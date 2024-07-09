@@ -53,13 +53,14 @@ public class Brick : MonoBehaviour {
             Bullet shutBullet = collision.gameObject.GetComponent<Bullet>();
             int shutColor = shutBullet.color;
             if (shutColor == color) {
-                if (!shutBullet.GetSecondaryBullet()) {
-                    CreateBullet(collision, shutColor);
-                }
+                //Debug.Log("color = " + color);
                 Destroy(gameObject);
+                if (!shutBullet.GetSecondaryBullet()) {
+                    CreateBullet(collision, shutColor, false);
+                }
             } else if (colorSet.Contains(color)) {
                 if (!shutBullet.GetSecondaryBullet()) {
-                    CreateBullet(collision, shutColor);
+                    CreateBullet(collision, shutColor, true);
                 }
                 gameObject.GetComponent<SpriteRenderer>().color = (Color)colorTable[color - shutColor];
             }
@@ -67,7 +68,7 @@ public class Brick : MonoBehaviour {
         }
     }
 
-    private void CreateBullet(Collision2D collision, int shotColor) {
+    private void CreateBullet(Collision2D collision, int shotColor, bool flag) {
         GameObject bullet = Instantiate(bulletPrefab);
         bullet.transform.position = transform.position;
         bullet.transform.localScale = transform.localScale;
@@ -75,6 +76,6 @@ public class Brick : MonoBehaviour {
         Bullet bulletScript = bullet.GetComponent<Bullet>();
         bulletScript.SetDirection(Vector2.Reflect(direction.normalized, collision.contacts[0].normal));
         bulletScript.SetSecondaryBullet(true);
-        bulletScript.SetIgnoreFirstCollision();
+        bulletScript.SetIgnoreFirstCollision(flag);
     }
 }

@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 8912755953862399213}
   - component: {fileID: 7070539930531780263}
   - component: {fileID: 6637803429300468670}
-  - component: {fileID: 6691333222238606082}
   - component: {fileID: -4457384151688557676}
+  - component: {fileID: 5309562684590445540}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Ball
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 2011741929
-  m_SortingLayer: 1
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0.9169811, g: 0.22535199, b: 0.16436444, a: 1}
@@ -122,21 +122,6 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
---- !u!114 &6691333222238606082
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 77289057703285708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 437bc1f20762ab74980c21359fef4a3a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  color: 2
-  speed: 2
-  bulletPrefab: {fileID: 6423662083260257659, guid: 637854cb90dc47d4e87caf0cfa359162, type: 3}
 --- !u!50 &-4457384151688557676
 Rigidbody2D:
   serializedVersion: 4
@@ -164,3 +149,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5309562684590445540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77289057703285708}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 437bc1f20762ab74980c21359fef4a3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 2
+  speed: 2
+  bulletPrefab: {fileID: 6423662083260257659, guid: 637854cb90dc47d4e87caf0cfa359162, type: 3}
