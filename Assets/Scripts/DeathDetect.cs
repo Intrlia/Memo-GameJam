@@ -12,7 +12,7 @@ public class DeathDetect : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Brick"))
         {
-            Debug.Log(Time.timeScale);
+            //Debug.Log(Time.timeScale);
             Time.timeScale = 0;
             //collision.gameObject.SetActive(false);
             //SceneManager.LoadScene("LostUI");

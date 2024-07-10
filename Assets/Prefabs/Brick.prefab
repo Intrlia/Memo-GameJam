@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8912755953862399213}
   - component: {fileID: 7070539930531780263}
   - component: {fileID: 5309562684590445540}
-  - component: {fileID: 1603305644477912670}
+  - component: {fileID: 1382134316894258262}
   m_Layer: 0
   m_Name: Brick
   m_TagString: Brick
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.034, z: 0}
-  m_LocalScale: {x: 0.05, y: 0.05, z: 0}
+  m_LocalScale: {x: 0.35, y: 0.35, z: 0}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 0}
@@ -75,8 +75,8 @@ SpriteRenderer:
   m_SortingLayerID: -1386401615
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 158384d2f32308f45af0737bf31007a7, type: 3}
-  m_Color: {r: 1, g: 0.98552644, b: 0.9843137, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f4213a36f2277564096056e7a621bfab, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -101,7 +101,14 @@ MonoBehaviour:
   color: 6
   speed: 0.47
   bulletPrefab: {fileID: 6423662083260257659, guid: 637854cb90dc47d4e87caf0cfa359162, type: 3}
---- !u!70 &1603305644477912670
+  RedSprite: {fileID: 21300000, guid: f4213a36f2277564096056e7a621bfab, type: 3}
+  YellowSprite: {fileID: 21300000, guid: a2f5dd2378321384d90b6a66575426eb, type: 3}
+  BlueSprite: {fileID: 21300000, guid: 0f81d2afa4cd56e468e9240714e10110, type: 3}
+  OrangeSprite: {fileID: 21300000, guid: 5b5e63c247d7d6a4f80469e70d970387, type: 3}
+  PurpleSprite: {fileID: 21300000, guid: 49e55ef6d8ed56b4b86f5b826c76a610, type: 3}
+  GreenSprite: {fileID: 21300000, guid: b838a8312ce96d74f909374887fa538e, type: 3}
+  BlackSprite: {fileID: 21300000, guid: 71a28e46f49f7c1448c21424bed237fb, type: 3}
+--- !u!70 &1382134316894258262
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -134,5 +141,5 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 15, y: 0.0001}
+  m_Size: {x: 2.6, y: 2.6}
   m_Direction: 0

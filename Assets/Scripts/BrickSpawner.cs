@@ -23,7 +23,7 @@ public class BrickSpawner : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         random = new System.Random();
-        SpawnBrick();
+        //SpawnBrick();
     }
 
     // Update is called once per frame
@@ -38,20 +38,32 @@ public class BrickSpawner : MonoBehaviour {
     }
 
     void SpawnBrick() {
-        GameObject Brick1 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y + spawnOffset, 0), transform.rotation);
-        int randomNumber = random.Next(1, 8);
-        Brick1.GetComponent<Brick>().color = (int)colorTable[randomNumber];
+        int randomNumber;
+        //GameObject Brick1 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y + spawnOffset, 0), transform.rotation);
+        //randomNumber = random.Next(1, 8);
+        //Brick1.GetComponent<Brick>().color = (int)colorTable[randomNumber];
+        //Debug.Log(333);
         GameObject Brick2 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y + spawnOffset / 2, 0), transform.rotation);
         randomNumber = random.Next(1, 8);
+        //Debug.Log(randomNumber);
+        //Debug.Log("color = " + Brick2.GetComponent<Brick>().color);
         Brick2.GetComponent<Brick>().color = (int)colorTable[randomNumber];
+        //Debug.Log("color = " + Brick2.GetComponent<Brick>().color);
+        //Debug.Log(222);
+
         GameObject Brick3 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation);
         randomNumber = random.Next(1, 8);
+        //Debug.Log(randomNumber);
         Brick3.GetComponent<Brick>().color = (int)colorTable[randomNumber];
+
         GameObject Brick4 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y - spawnOffset / 2, 0), transform.rotation);
         randomNumber = random.Next(1, 8);
+        //Debug.Log(randomNumber);
         Brick4.GetComponent<Brick>().color = (int)colorTable[randomNumber];
-        GameObject Brick5 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y - spawnOffset, 0), transform.rotation);
-        randomNumber = random.Next(1, 8);
-        Brick5.GetComponent<Brick>().color = (int)colorTable[randomNumber];
+
+        //Debug.Log("----------------");
+        //GameObject Brick5 = Instantiate(Brick, new Vector3(transform.position.x, transform.position.y - spawnOffset, 0), transform.rotation);
+        //randomNumber = random.Next(1, 8);
+        //Brick5.GetComponent<Brick>().color = (int)colorTable[randomNumber];
     }
 }
