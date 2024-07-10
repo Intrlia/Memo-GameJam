@@ -6,7 +6,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour {
 
     public int bulletSpeed = 5;
-    public int color = (int) Colors.Red;
+    public int color = 2;
 
     private Rigidbody2D _rb2d;
     private SpriteRenderer _spriteRenderer;
@@ -19,7 +19,7 @@ public class Bullet : MonoBehaviour {
         { (int)Colors.Red, new Color(255,0,0) },
         { (int)Colors.Yellow, new Color(255, 255, 0) },
         { (int)Colors.Blue, new Color(0,0,255) },
-        {(int)Colors.Orange, new Color(255,165,0)},
+        { (int)Colors.Orange, new Color(255,165,0)},
         { (int)Colors.Purple, new Color(255,0,255) },
         { (int)Colors.Green, new Color(0,255,0) },
         { (int)Colors.Black, new Color(0,0,0)}
@@ -29,7 +29,6 @@ public class Bullet : MonoBehaviour {
     void Start() {
         _rb2d = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
-        _spriteRenderer.color = (Color)colorTable[color];
     }
 
     // Update is called once per frame
@@ -37,12 +36,20 @@ public class Bullet : MonoBehaviour {
 
         //transform.Translate(direction * bulletSpeed * Time.deltaTime);
         _rb2d.velocity = direction * bulletSpeed;
+        _spriteRenderer.color = (Color)colorTable[color];
+
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Disappear") {
+            Destroy(gameObject);
+        }
 
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
         //Debug.Log(isSecondaryBullet);
-        if (collision.gameObject.tag == "Ball") {
+        if (collision.gameObject.tag == "Brick") {
             if (ignoreFirstCollision) {
                 ignoreFirstCollision = false;
             } else {

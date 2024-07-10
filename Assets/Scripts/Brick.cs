@@ -14,6 +14,7 @@ public class Brick : MonoBehaviour {
     public GameObject bulletPrefab;
 
     private Rigidbody2D _rb2d;
+    private SpriteRenderer _spriteRenderer;
     private Vector2 direction = Vector2.left;
     private Hashtable colorTable = new Hashtable() {
         { (int)Colors.Red, new Color(255,0,0) },
@@ -38,18 +39,25 @@ public class Brick : MonoBehaviour {
 
     void Start() {
         _rb2d = GetComponent<Rigidbody2D>();
-        gameObject.GetComponent<SpriteRenderer>().color = (Color)colorTable[color];
+        _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update() {
         //transform.Translate(direction * speed * Time.deltaTime);
         _rb2d.velocity = direction * speed;
+        _spriteRenderer.color = (Color)colorTable[color];
+    }
+
+    void OnTriggerEnter2D(Collider2D collision) {
+        if (collision.gameObject.tag == "Disappear") {
+            Destroy(gameObject);
+       }
     }
 
     void OnCollisionEnter2D(Collision2D collision) {
         if (collision.gameObject.tag == "Bullet") {
-            //Debug.Log(collision.gameObject.GetComponent<Bullet>().color);
-            //Debug.Log("color = " + color);
+            Debug.Log(collision.gameObject.GetComponent<Bullet>().color);
+            Debug.Log("color = " + color);
             Bullet shutBullet = collision.gameObject.GetComponent<Bullet>();
             int shutColor = shutBullet.color;
             if (shutColor == color) {
@@ -58,13 +66,12 @@ public class Brick : MonoBehaviour {
                 if (!shutBullet.GetSecondaryBullet()) {
                     CreateBullet(collision, shutColor, false);
                 }
-            } else if (colorSet.Contains(color)) {
+            } else if (colorSet.Contains(color) && colorTable.ContainsKey(color - shutColor) && shutColor != color - shutColor) {
                 if (!shutBullet.GetSecondaryBullet()) {
                     CreateBullet(collision, shutColor, true);
                 }
-                gameObject.GetComponent<SpriteRenderer>().color = (Color)colorTable[color - shutColor];
+                color -= shutColor;
             }
-
         }
     }
 
@@ -72,8 +79,8 @@ public class Brick : MonoBehaviour {
         GameObject bullet = Instantiate(bulletPrefab);
         bullet.transform.position = transform.position;
         bullet.transform.localScale = transform.localScale;
-        bullet.GetComponent<SpriteRenderer>().color = (Color)colorTable[shotColor];
         Bullet bulletScript = bullet.GetComponent<Bullet>();
+        bulletScript.color = shotColor;
         bulletScript.SetDirection(Vector2.Reflect(direction.normalized, collision.contacts[0].normal));
         bulletScript.SetSecondaryBullet(true);
         bulletScript.SetIgnoreFirstCollision(flag);
