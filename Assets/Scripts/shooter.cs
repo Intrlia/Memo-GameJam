@@ -27,7 +27,7 @@ public class shooter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Time.timeScale = 0.5f;
+        //Time.timeScale = 0.5f;
         _rigid = GetComponent<Rigidbody2D>();
         currentColor = 2;
         //currentBullet = bullet;
@@ -68,7 +68,7 @@ public class shooter : MonoBehaviour
                 bullet.GetComponent<SpriteRenderer>().color = (Color)colorTable[currentColor];
                 bullet.GetComponent<Bullet>().color = currentColor;
                 //Debug.Log("currentColor:" + bullet.GetComponent<SpriteRenderer>().color);
-                currentColor = (currentColor - 1) % 3 + 2;
+                //currentColor = (currentColor - 1) % 3 + 2;
                 nextFire = Time.time + fireRate;
             }
             

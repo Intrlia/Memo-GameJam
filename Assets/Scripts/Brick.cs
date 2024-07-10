@@ -10,10 +10,10 @@ using System.Collections;
 public class Brick : MonoBehaviour {
 
     public int color = (int) Colors.Red;
-    public int speed = 2;
+    public float speed = 2;
     public GameObject bulletPrefab;
 
-    private Rigidbody2D _rb2d;
+    //private Rigidbody2D _rb2d;
     private SpriteRenderer _spriteRenderer;
     private Vector2 direction = Vector2.left;
     private Hashtable colorTable = new Hashtable() {
@@ -38,13 +38,13 @@ public class Brick : MonoBehaviour {
     }
 
     void Start() {
-        _rb2d = GetComponent<Rigidbody2D>();
+        //_rb2d = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update() {
-        //transform.Translate(direction * speed * Time.deltaTime);
-        _rb2d.velocity = direction * speed;
+        transform.Translate(direction * speed * Time.deltaTime);
+        //_rb2d.velocity = direction * speed;
         _spriteRenderer.color = (Color)colorTable[color];
     }
 

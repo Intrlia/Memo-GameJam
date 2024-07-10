@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|d:\\csharp\\unity\\memo\\memo-gamejam\\assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\bullet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|d:\\csharp\\unity\\memo\\memo-gamejam\\assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\color.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|d:\\csharp\\unity\\memo\\memo-gamejam\\assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,33 +38,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BrickSpawner.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\BrickSpawner.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\BrickSpawner.cs",
               "ToolTip": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\BrickSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\BrickSpawner.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAYwCYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T12:55:59.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T12:55:59.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "shooter.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\shooter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\shooter.cs",
               "ToolTip": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\shooter.cs",
               "RelativeToolTip": "Assets\\Scripts\\shooter.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAkwEQAAABDAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T11:20:27.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T11:20:27.231Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Color.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\Color.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Color.cs",
@@ -72,18 +70,17 @@
               "RelativeToolTip": "Assets\\Scripts\\Color.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T08:14:27.295Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T08:14:27.295Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Bullet.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\Bullet.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Bullet.cs",
               "ToolTip": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\Bullet.cs",
               "RelativeToolTip": "Assets\\Scripts\\Bullet.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAYwAsAAAArAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAIwCUAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T08:13:21.507Z",
               "EditorCaption": ""
@@ -96,7 +93,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Brick.cs",
               "ToolTip": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\Brick.cs",
               "RelativeToolTip": "Assets\\Scripts\\Brick.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAIwFcAAAABAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAADwv1QAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-09T08:12:37.374Z",
               "EditorCaption": ""
