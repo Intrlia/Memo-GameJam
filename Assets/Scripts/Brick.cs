@@ -12,6 +12,7 @@ public class Brick : MonoBehaviour {
     public int color = (int) Colors.Red;
     public float speed = 2;
     public GameObject bulletPrefab;
+    public AudioSource As;
 
     public Sprite RedSprite;
     public Sprite YellowSprite;
@@ -23,6 +24,7 @@ public class Brick : MonoBehaviour {
     private Hashtable spriteTable;
 
     //private Rigidbody2D _rb2d;
+    private CapsuleCollider2D _cc2d;
     private SpriteRenderer _spriteRenderer;
     private Vector2 direction = Vector2.left;
     private Hashtable colorTable = new Hashtable() {
@@ -53,6 +55,8 @@ public class Brick : MonoBehaviour {
     void Start() {
         //_rb2d = GetComponent<Rigidbody2D>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        _cc2d = GetComponent<CapsuleCollider2D>();
+        As = GetComponent<AudioSource>();
         //Debug.Log(_spriteRenderer.color);
         //_spriteRenderer.color = (Color32)colorTable[color];
         //Debug.Log(_spriteRenderer.color);
@@ -87,11 +91,16 @@ public class Brick : MonoBehaviour {
         if (collision.gameObject.tag == "Bullet") {
             //Debug.Log(collision.gameObject.GetComponent<Bullet>().color);
             //Debug.Log("color = " + color);
+            As.Play();
             Bullet shutBullet = collision.gameObject.GetComponent<Bullet>();
             int shutColor = shutBullet.color;
             if (shutColor == color) {
                 //Debug.Log("color = " + color);
-                Destroy(gameObject);
+                _spriteRenderer.enabled = false;
+                _cc2d.enabled = false;
+                if (As != null && As.isPlaying) {
+                    StartCoroutine(WaitForAudioClipEnd());
+                }
                 if (!shutBullet.GetSecondaryBullet()) {
                     CreateBullet(collision, shutColor, false);
                 }
@@ -102,6 +111,16 @@ public class Brick : MonoBehaviour {
                 color -= shutColor;
             }
         }
+    }
+
+    IEnumerator WaitForAudioClipEnd() {
+        // 等待音频播放完成
+        while (As.isPlaying) {
+            yield return null;
+        }
+
+        // 播放完毕后销毁物体
+        Destroy(gameObject);
     }
 
     private void CreateBullet(Collision2D collision, int shotColor, bool flag) {

@@ -186,6 +186,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletSpeed: 6
   color: 2
+  As: {fileID: 0}
   RedSprite: {fileID: 21300000, guid: f4213a36f2277564096056e7a621bfab, type: 3}
   YellowSprite: {fileID: 21300000, guid: a2f5dd2378321384d90b6a66575426eb, type: 3}
   BlueSprite: {fileID: 21300000, guid: 0f81d2afa4cd56e468e9240714e10110, type: 3}

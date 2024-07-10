@@ -8,10 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/BallScene.unity
     guid: 70bfae8cd1f0c2b4d9ab4081c64d1126
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/LostUI.unity
     guid: bd1edc0795b36864691459f197827392
+  - enabled: 1
+    path: Assets/Scenes/StartGame.unity
+    guid: f1f294fbd941349499a937f6da6b93c1
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: 6ed3827d9847891459872e616af8a940
   m_configObjects: {}

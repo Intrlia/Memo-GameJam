@@ -8,6 +8,7 @@ public class Bullet : MonoBehaviour {
     public int bulletSpeed = 5;
     public int color = 2;
 
+
     private Rigidbody2D _rb2d;
     private SpriteRenderer _spriteRenderer;
 
@@ -57,6 +58,7 @@ public class Bullet : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision) {
         //Debug.Log(isSecondaryBullet);
         if (collision.gameObject.tag == "Brick") {
+           
             if (ignoreFirstCollision) {
                 ignoreFirstCollision = false;
             } else {
