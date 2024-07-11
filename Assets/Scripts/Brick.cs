@@ -13,6 +13,8 @@ public class Brick : MonoBehaviour {
     public float speed = 2;
     public GameObject bulletPrefab;
     public AudioSource As;
+    public AudioSource change;
+    public AudioSource destroy;
 
     public Sprite RedSprite;
     public Sprite YellowSprite;
@@ -98,6 +100,7 @@ public class Brick : MonoBehaviour {
                 //Debug.Log("color = " + color);
                 _spriteRenderer.enabled = false;
                 _cc2d.enabled = false;
+                destroy.Play();
                 if (As != null && As.isPlaying) {
                     StartCoroutine(WaitForAudioClipEnd());
                 }
@@ -109,6 +112,7 @@ public class Brick : MonoBehaviour {
                     CreateBullet(collision, shutColor, true);
                 }
                 color -= shutColor;
+                change.Play();
             }
         }
     }
@@ -145,4 +149,27 @@ public class Brick : MonoBehaviour {
         bulletScript.SetSecondaryBullet(true);
         bulletScript.SetIgnoreFirstCollision(flag);
     }
+
+    //设计检测器查看Bricks实例的数量
+    private static HashSet<Brick> allBricks = new HashSet<Brick>();
+    void Awake() {
+        // 添加实例到集合中
+        allBricks.Add(this);
+        //Debug.Log("Brick created");
+
+    }
+    void OnDestroy() {
+        // 从集合中移除实例
+        allBricks.Remove(this);
+        //Debug.Log("Brick destroyed");
+    }
+
+    public static int GetRemainingBrickCount() {
+        return allBricks.Count;
+    }
+
+    public static bool IsBrickStillAlive(Brick brick) {
+        return allBricks.Contains(brick);
+    }
+    //设计检测器查看Bricks实例的数量
 }

@@ -13,6 +13,7 @@ public class shooter : MonoBehaviour
     public Sprite YellowSprite;
     public Sprite BlueSprite;
     public AudioSource As;
+    public AudioSource change;
     public GameObject Limit;
     public GameObject bulletPrefab;
     public int count;
@@ -73,6 +74,7 @@ public class shooter : MonoBehaviour
         if (Input.GetMouseButtonDown(1)) // 1 表示右键
         {
             currentColor = (currentColor - 1) % 3 + 2;
+            change.Play();
         }
 
         _sprite.sprite = (Sprite)spriteTable[currentColor];
