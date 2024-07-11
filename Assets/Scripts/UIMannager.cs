@@ -113,4 +113,10 @@ public class UIManager : MonoBehaviour
             buttonText.text = "¡Á1";
         }
     }
+
+    public void QuitGame()
+    {
+        Debug.Log("Quit");
+        Application.Quit();
+    }
 }

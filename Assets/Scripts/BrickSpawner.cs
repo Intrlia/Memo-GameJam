@@ -2,6 +2,7 @@ using MyColor;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BrickSpawner : MonoBehaviour {
     public GameObject _Brick;
@@ -10,7 +11,7 @@ public class BrickSpawner : MonoBehaviour {
     public float spawnOffset = 4;
     private System.Random random;
 
-    static int totalbricks = 0;
+    private int totalbricks = 0;
     public int bricknums = 99;
 
     private Hashtable colorTable = new Hashtable() {
@@ -62,7 +63,8 @@ public class BrickSpawner : MonoBehaviour {
     void CheckWin() {
         //Debug.Log("Remaining Brick Count: " + Brick.GetRemainingBrickCount());
         if (Brick.GetRemainingBrickCount() == 0 && totalbricks >= bricknums) {
-            Debug.Log("ÄãÓ®À²£¡");
+            SceneManager.LoadScene("Win");
+            //Debug.Log("ÄãÓ®À²£¡");
         }
     }
 }
