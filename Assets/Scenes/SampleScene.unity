@@ -551,6 +551,10 @@ PrefabInstance:
       propertyPath: _Brick
       value: 
       objectReference: {fileID: 77289057703285708, guid: 3c7e39dc15e8e604b8fa9334427d331e, type: 3}
+    - target: {fileID: 8544761971756474040, guid: 21bd869332f476d46a53c6c8abf96f16, type: 3}
+      propertyPath: bricknums
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

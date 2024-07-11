@@ -3,15 +3,18 @@
   "WorkspaceRootPath": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|d:\\csharp\\unity\\memo\\memo-gamejam\\assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\brickspawner.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|d:\\csharp\\unity\\memo\\memo-gamejam\\assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\27163\\Downloads\\BrickSpawner (1).cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\brick.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|d:\\csharp\\unity\\memo\\memo-gamejam\\assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|D:\\Csharp\\unity\\Memo\\Memo-GameJam\\assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34F74F39-7D91-3BB9-F556-4B48DF090B5D}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\shooter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -38,7 +41,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,6 +50,17 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "BrickSpawner (1).cs",
+              "DocumentMoniker": "C:\\Users\\27163\\Downloads\\BrickSpawner (1).cs",
+              "ToolTip": "C:\\Users\\27163\\Downloads\\BrickSpawner (1).cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAC4AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-11T09:08:31.374Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Brick.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\Brick.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Brick.cs",
@@ -54,8 +68,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Brick.cs",
               "ViewState": "AQIAAJYAAAAAAAAAAAAkwKAAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-11T08:38:24.364Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-11T08:38:24.364Z"
             },
             {
               "$type": "Document",
@@ -65,14 +78,14 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\BrickSpawner.cs",
               "ToolTip": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\BrickSpawner.cs",
               "RelativeToolTip": "Assets\\Scripts\\BrickSpawner.cs",
-              "ViewState": "AQIAADkAAAAAAAAAAAAAAEEAAAAAAAAA",
+              "ViewState": "AQIAACcAAAAAAAAAAAAiwCwAAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-11T08:22:35.028Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "TextDisplayer.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\TextDisplayer.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\TextDisplayer.cs",
@@ -84,7 +97,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "DeathDetect.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\DeathDetect.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DeathDetect.cs",
@@ -96,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "UIMannager.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\UIMannager.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIMannager.cs",
@@ -108,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "OnButton.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\OnButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\OnButton.cs",
@@ -120,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "shooter.cs",
               "DocumentMoniker": "D:\\Csharp\\unity\\Memo\\Memo-GameJam\\Assets\\Scripts\\shooter.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\shooter.cs",
@@ -128,8 +141,7 @@
               "RelativeToolTip": "Assets\\Scripts\\shooter.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAAEwAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-09T11:20:27.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-09T11:20:27.231Z"
             }
           ]
         }
