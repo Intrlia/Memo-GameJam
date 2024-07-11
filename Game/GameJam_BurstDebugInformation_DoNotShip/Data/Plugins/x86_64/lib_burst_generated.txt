@@ -1,4 +1,4 @@
-Library: D:\Csharp\unity\Memo\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+Library: C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --platform=Windows
 --backend=burst-llvm-15
 --target=AVX2
@@ -51,10 +51,10 @@ Library: D:\Csharp\unity\Memo\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="GameJam_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\Csharp\unity\Memo\Memo-GameJam\Temp\Burst
---key-folder=C:/Unity Hub/unity/editor/2022.3.10f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=D:\Csharp\unity\Memo\Memo-GameJam\Library\Burst
---output=D:\Csharp\unity\Memo\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--temp-folder=C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Temp\Burst
+--key-folder=D:/1PROGRAM/UnityEditor/2022.3.10f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--decode-folder=C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Library\Burst
+--output=C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
@@ -140,10 +140,10 @@ Library: D:\Csharp\unity\Memo\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\
 --assembly-defines=mscorlib;
 --linker-options=PdbAltPath="GameJam_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
---temp-folder=D:\Csharp\unity\Memo\Memo-GameJam\Temp\Burst
---key-folder=C:/Unity Hub/unity/editor/2022.3.10f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
---decode-folder=D:\Csharp\unity\Memo\Memo-GameJam\Library\Burst
---output=D:\Csharp\unity\Memo\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
+--temp-folder=C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Temp\Burst
+--key-folder=D:/1PROGRAM/UnityEditor/2022.3.10f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--decode-folder=C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Library\Burst
+--output=C:\Users\TITMOUSE\Desktop\最新版GJ\Memo-GameJam\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
 
 --method=Unity.Burst.BurstCompiler+BurstCompilerHelper, Unity.Burst, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null::IsBurstEnabled()--8c2be93e18276203cbd918daa2748a10
