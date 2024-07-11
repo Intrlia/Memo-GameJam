@@ -4,6 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class shooter : MonoBehaviour
@@ -30,7 +31,7 @@ public class shooter : MonoBehaviour
     };
 
     private Hashtable spriteTable;
-    private OnButton onButton;
+    private OnButton[] onButton;
 
     private float downLimit;
     private float upLimit;
@@ -56,7 +57,7 @@ public class shooter : MonoBehaviour
         downLimit = corners[0].y;
         upLimit = corners[1].y;
 
-        onButton = GameObject.FindObjectOfType<OnButton>();
+        onButton = FindObjectsOfType<OnButton>();
 
     }
 
@@ -76,32 +77,41 @@ public class shooter : MonoBehaviour
 
         _sprite.sprite = (Sprite)spriteTable[currentColor];
 
+        //Debug.Log("Time.time = " + Time.time + " nextFire = " + nextFire);
         if (Time.time > nextFire)
         {
             //if (Input.GetMouseButton(0)) {
-            //    Debug.Log(Input.GetMouseButton(0) + "-" + count + "-" + !onButton.GetIsHovering());
-            //    Debug.Log(onButton);
+            //    Debug.Log(Input.GetMouseButton(0) + "-" + count + "-" + !GetIsHovering());
             //}
-                
-            if (Input.GetMouseButton(0) && count > 0 && !onButton.GetIsHovering() && Time.timeScale > 0)
-            { 
-                GameObject bullet =  Instantiate(bulletPrefab, transform.position, transform.rotation);
-                bullet.GetComponent<Bullet>().color = currentColor;
-                nextFire = Time.time + fireRate;
-                As.Play();
-                count--;
+            //&& Time.timeScale > 0
+            if (Input.GetMouseButton(0)) {
+                if (count > 0 && !GetIsHovering() && Time.timeScale > 0) {
+                    GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+                    bullet.GetComponent<Bullet>().color = currentColor;
+                    nextFire = Time.time + fireRate;
+                    As.Play();
+                    count--;
+                } else if (count <= 0) {
+                    SceneManager.LoadScene("GameOver");
+                }
             }
-        }
-
-        if (count <= 0) {
-
-            // 游戏结束
         }
 
         //TextDisplayer.Instance.DisplayMessage(count.ToString(), 30, Color.black, new Rect(transform.position.x, transform.position.y, 0, 0));
         if (textMesh != null)
             textMesh.text = count.ToString();
 
+    }
+
+    public bool GetIsHovering()
+    {
+        foreach (OnButton button in onButton)
+        {
+            //Debug.Log(button + "--" + button.GetIsHovering());
+            if (button.GetIsHovering())
+                return true;
+        }
+        return false;
     }
 
 
