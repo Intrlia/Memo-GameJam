@@ -96,7 +96,7 @@ public class Brick : MonoBehaviour {
             As.Play();
             Bullet shutBullet = collision.gameObject.GetComponent<Bullet>();
             int shutColor = shutBullet.color;
-            if (shutColor == color) {
+            if (shutColor == color) {  // 单色
                 //Debug.Log("color = " + color);
                 _spriteRenderer.enabled = false;
                 _cc2d.enabled = false;
@@ -107,22 +107,30 @@ public class Brick : MonoBehaviour {
                 if (!shutBullet.GetSecondaryBullet()) {
                     CreateBullet(collision, shutColor, false);
                 }
-            } else if (colorSet.Contains(color) && colorTable.ContainsKey(color - shutColor) && shutColor != color - shutColor) {
+            } else if (colorSet.Contains(color) && colorTable.ContainsKey(color - shutColor) 
+                        && shutColor != color - shutColor && !(color == 7 && shutColor == 2) && flag) {
                 if (!shutBullet.GetSecondaryBullet()) {
                     CreateBullet(collision, shutColor, true);
                 }
+                flag = !flag;
+                //Debug.Log("color = " + color + " , shutColor = " + shutColor);
                 color -= shutColor;
+                //Debug.Log("color = " + color);
                 change.Play();
+            } else if (!flag) {
+                flag = true;
             }
         }
     }
+
+    private bool flag = true; // 可以碰撞
 
     IEnumerator WaitForAudioClipEnd() {
         // 等待音频播放完成
         while (As.isPlaying) {
             yield return null;
         }
-
+        flag = true;
         // 播放完毕后销毁物体
         Destroy(gameObject);
     }
