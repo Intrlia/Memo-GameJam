@@ -155,13 +155,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71b4933e1d5ce1548a0a2fe6c1a3aa83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RedSprite: {fileID: 21300000, guid: f4213a36f2277564096056e7a621bfab, type: 3}
-  YellowSprite: {fileID: 21300000, guid: a2f5dd2378321384d90b6a66575426eb, type: 3}
-  BlueSprite: {fileID: 21300000, guid: 0f81d2afa4cd56e468e9240714e10110, type: 3}
+  RedSprite: {fileID: 21300000, guid: 6a0dd9cd58459cc4688ef1c050fb568b, type: 3}
+  YellowSprite: {fileID: 21300000, guid: f8f1101c1966d6a4eb3bad3a2dd69591, type: 3}
+  BlueSprite: {fileID: 21300000, guid: 009e283e9a7d42c4280ca22d1bfb6e3d, type: 3}
   As: {fileID: 55289235}
   Limit: {fileID: 1671192767}
   bulletPrefab: {fileID: 6423662083260257659, guid: 637854cb90dc47d4e87caf0cfa359162, type: 3}
-  count: 5
+  count: 20
   speed: 4
   fireRate: 0.5
 --- !u!212 &55289233
@@ -205,7 +205,7 @@ SpriteRenderer:
   m_SortingLayerID: -1386401615
   m_SortingLayer: 1
   m_SortingOrder: 36
-  m_Sprite: {fileID: 21300000, guid: 56c6050215ccb61478c63f30e7174339, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6a0dd9cd58459cc4688ef1c050fb568b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -226,8 +226,8 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.45, y: -0.18, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.5, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 0.7, y: 0.7, z: 1.4}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2047248860}
   m_Father: {fileID: 0}
@@ -1305,8 +1305,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190082
-  m_fontColor: {r: 0.009433985, g: 0.00048059845, b: 0.00048059845, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1323,8 +1323,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8
-  m_fontSizeBase: 8
+  m_fontSize: 6
+  m_fontSizeBase: 6
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
