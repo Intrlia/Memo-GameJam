@@ -88,7 +88,7 @@ public class shooter : MonoBehaviour
             //&& Time.timeScale > 0
             if (Input.GetMouseButton(0)) {
                 if (count > 0 && !GetIsHovering() && Time.timeScale > 0) {
-                    GameObject bullet = Instantiate(bulletPrefab, transform.position, transform.rotation);
+                    GameObject bullet = Instantiate(bulletPrefab, transform.position + new Vector3(1.25f, 0, 0), transform.rotation);
                     bullet.GetComponent<Bullet>().color = currentColor;
                     nextFire = Time.time + fireRate;
                     As.Play();
